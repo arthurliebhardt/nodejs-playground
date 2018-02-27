@@ -1,0 +1,22 @@
+{
+  "name": "tiny-js-blockchain-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurliebhardt/tiny-js-blockchain-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurliebhardt/tiny-js-blockchain-example/issues"
+  },
+  "homepage": "https://github.com/arthurliebhardt/tiny-js-blockchain-example#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
