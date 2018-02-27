@@ -38,10 +38,14 @@ class Blockchain {
             const currentBlock = this.chain[i];
             const previousBlock = this.chain[i - 1];
 
+            // console.log("currentBlock.hash " + currentBlock.hash);
+            // console.log("currentBlock.calculateHash " + currentBlock.calculateHash());
             if(currentBlock.hash !== currentBlock.calculateHash()) {
                 return false;
             }
 
+            // console.log("currentBlock.previousHash " + currentBlock.hash);
+            // console.log("previousBlock.hash " + currentBlock.calculateHash());
             if(currentBlock.previousHash !== previousBlock.hash) {
                 return false;
             }
@@ -49,3 +53,19 @@ class Blockchain {
         return true;
     }
 }
+
+let atrChain = new Blockchain();
+atrChain.addBlock(new Block(1, "27/01/2018", { amount: 4}));
+atrChain.addBlock(new Block(2, "27/01/2018", { amount: 8}));
+
+// Check if chain is valid (will return true)
+console.log('Blockchain valid? ' + atrChain.isChainValid());
+
+// Let's now manipulate the data
+console.log('Changing a block...');
+atrChain.chain[1].data = { amount: 100 };
+
+// Check our chain again (will now return false)
+console.log('Blockchain valid? ' + atrChain.isChainValid());
+
+console.log(JSON.stringify(atrChain, null, 4));
