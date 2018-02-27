@@ -1,3 +1,1 @@
-# nodejs-playground
-
-This is mine nodejs playground repo. I will try and test some things like blockchain or and api with nodejs.
+This will be mine webserver/api playground. Where i will add mongodb and such things.
