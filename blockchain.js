@@ -26,6 +26,14 @@ class Block {
     }
 }
 
+class Transaction {
+    constructor(fromAdress, toAddress, amount) {
+        this.fromAdress = fromAdress;
+        this.toAddress = toAddress;
+        this.amount = amount;
+    }
+}
+
 class Blockchain {
     constructor() {
         this.chain = [this.createGenesisBlock()];
