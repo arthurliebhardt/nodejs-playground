@@ -5,4 +5,4 @@ Blockchain Tutorials:
 - [x] https://www.savjee.be/2017/07/Writing-tiny-blockchain-in-JavaScript/
 - [x] https://www.savjee.be/2017/09/Implementing-proof-of-work-javascript-blockchain/
 - [x] https://www.savjee.be/2018/02/Transactions-and-mining-rewards/
-- [] http://www.darrenbeck.co.uk/blockchain/nodejs/nodejscrypto/
+- [ \] http://www.darrenbeck.co.uk/blockchain/nodejs/nodejscrypto/
