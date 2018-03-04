@@ -13,9 +13,12 @@ const BrewChain = function() {
             previousHash: "-1"
         };
 
+
         genesisBlock.hash = createHash(genesisBlock);
         chain.push(genesisBlock);
         currentBlock = genesisBlock;
+
+        console.log(`GENSIS: ${JSON.stringify(genesisBlock)}`);
     }
 
     function createHash({timestamp, data, index, previousHash, nonce}) {
@@ -26,6 +29,7 @@ const BrewChain = function() {
         if(checkNewBlockIsValid(block, currentBlock)) {
             chain.push(block);
             currentBlock = block;
+            console.log(`NEW BLOCK ${JSON.stringify(currentBlock)}`);
             return true;
         }
         return false;
@@ -130,4 +134,10 @@ const BrewChain = function() {
 	};
 };
 
-module.exports = BrewChain;
+// module.exports = BrewChain;
+
+// let myBrew = new BrewChain();
+// myBrew.init();
+
+// myBrew.addToChain(myBrew.createBlock('The 1st block'));
+// myBrew.addToChain(myBrew.createBlock('The 2nd block'));
